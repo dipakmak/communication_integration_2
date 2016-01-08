@@ -12,22 +12,6 @@
 	<!-- xml based configuration which is ~ to InfrastructureConfig.java -->
 	
 	<!--<jpa:repositories base-package="com.intelligrated.download.mapper" />-->
-	
-	<jdbc:embedded-database id="dataSource" type="H2" />
-	
-	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="com.intelligrated.download.mapper" />
-		<property name="jpaVendorAdapter">
-			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-				<property name="database" value="H2" />
-				<property name="generateDdl" value="true" />
-			</bean>
-		</property>
-	</bean>
-	
-	<bean class="org.springframework.orm.jpa.JpaTransactionManager">
-		<property name="entityManagerFactory" ref="entityManagerFactory" />
-	</bean>
+
 
 </beans>
