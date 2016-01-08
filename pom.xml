@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>communication_integration</name>
+	<name>communication_integration_2</name>
 	<description>communication_integration  project for Spring Boot</description>
 
 	<parent>
